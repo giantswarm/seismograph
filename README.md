@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 
 ## Configuration
 
-Copy the provided `config.yaml.dist` to `config.yaml` and edit to your needs. Then edit `config.yaml` according to your needs.
+Copy the provided `config.yaml.dist` to `config.yaml` and edit according to your needs.
 
 - `global.github_api_token`: Optionally set the value of this key to a valid Github API token. Without a token, you might run into rate limits when using Seismograph frequently.
 - `global.projects`: For each software project you want to track, add one key here. Name this key however you want, but make sure it's unique within this file.
