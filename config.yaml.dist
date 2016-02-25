@@ -1,0 +1,6 @@
+global:
+    # set a valid API token to increase API rate limits
+    github_api_token:
+projects:
+    myproject1:
+        github: twbs/bootstrap
