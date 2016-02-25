@@ -31,9 +31,9 @@ Example:
 global:
   github_api_token: 3kg476foba34zby9e8hpa83f4
 projects:
-  firstproject
+  firstproject:
     github: giantswarm/kocho
-  otherproject
+  otherproject:
     github: giantswarm/mayu
 ```
 
