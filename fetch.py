@@ -14,13 +14,12 @@ def github_stats(client, organization, repository_name):
     github_org = g.get_organization(organization)
     repo = github_org.get_repo(repository_name)
     stats = {
-        "forks_count": repo.forks_count,
-        "network_count": repo.network_count,
-        "open_issues_count": repo.open_issues_count,
-        "stargazers_count": repo.stargazers_count,
-        "watchers_count": repo.watchers_count
+        "forks": repo.forks_count,
+        "network": repo.network_count,
+        "open_issues": repo.open_issues_count,
+        "stargazers": repo.stargazers_count,
+        "watchers": repo.watchers_count
     }
-    # TODO: count commits
     return stats
 
 if __name__ == "__main__":

@@ -22,8 +22,8 @@ $ pip install -r requirements.txt
 Copy the provided `config.yaml.dist` to `config.yaml` and edit according to your needs.
 
 - `global.github_api_token`: Optionally set the value of this key to a valid Github API token. Without a token, you might run into rate limits when using Seismograph frequently.
-- `global.projects`: For each software project you want to track, add one key here. Name this key however you want, but make sure it's unique within this file.
-- `global.projects.<project>.github`: This key is required per project. The value must be a string composed of the user or organization name, then a forward slash, then the actual repository name. For example, the [Bootstrap](https://github.com/twbs/bootstrap) repository would get the value `twbs/bootstrap`.
+- `projects`: For each software project you want to track, add one key here. Name this key however you want, but make sure it's unique within this file.
+- `projects.<project>.github`: This key is required per project. The value must be a string composed of the user or organization name, then a forward slash, then the actual repository name. For example, the [Bootstrap](https://github.com/twbs/bootstrap) repository would get the value `twbs/bootstrap`.
 
 Example:
 
@@ -51,15 +51,20 @@ Example:
 
 ```yaml
 kocho:
-  forks_count: 0
-  network_count: 0
-  open_issues_count: 16
-  stargazers_count: 48
-  watchers_count: 48
+  forks: 0
+  network: 0
+  open_issues: 16
+  stargazers: 48
+  watchers: 48
 mayu:
-  forks_count: 1
-  network_count: 1
-  open_issues_count: 13
-  stargazers_count: 34
-  watchers_count: 34
+  forks: 1
+  network: 1
+  open_issues: 13
+  stargazers: 34
+  watchers: 34
 ```
+
+## Future Plans
+
+- Gather statistics from additional sources, like StackOverflow, IRC, Google Groups
+- GitHub: Count commits, issues overall, pull requests
